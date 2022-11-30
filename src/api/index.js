@@ -13,7 +13,7 @@ const customFetch = async (url, { body, ...customConfig }) => {
     if(token){
         headers.Authorization = `Bearer ${token}`;
     }
-
+    
     const config = {
         ...customConfig,
         headers : {
